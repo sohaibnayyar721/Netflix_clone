@@ -21,8 +21,7 @@ connectdb()
 
 app.use('/api', router);
 
-app.use('*',(req,res)=>{
-  res.status(404).send("This url is not found")
+app.use('/',(req,res)=>{
+  res.send("Netflix backend")
 })
-
-app.listen(process.env.PORT || port, () => console.log(`Server is running on port: ${process.env.PORT} || ${port}`))
+app.listen(process.env.PORT || port, () => console.log(`Server is running on port: ${process.env.PORT}`))
