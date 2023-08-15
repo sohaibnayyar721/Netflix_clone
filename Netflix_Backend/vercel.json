@@ -7,14 +7,7 @@
         }
     ],
     "routes": [
-        {"src": "/", "dest": "/"},
-        {"src": "/api", "dest": "/api"},
-        {"src": "/api/login", "dest": "/api"},
-        {"src": "/api/forgot_pass", "dest": "/api"},
-        {"src": "/api/verify_code", "dest": "/api"},
-        {"src": "/api/change_pass", "dest": "/api"},
-        {"src": "/api/homescreen", "dest": "/api"},
-        {"src": "/api/register", "dest": "/api"}
+        {"src": "/(.*)", "dest": "/"}
 
     ]
   }
