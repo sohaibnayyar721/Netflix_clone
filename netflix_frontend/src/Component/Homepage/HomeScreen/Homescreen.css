@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: black; */
+}
+
+
+
+
+.dropdown_list {
+  width: 210px;
+  height: auto;
+  /* background-color: black; */
+  position: fixed;
+  top: 55px;
+  right: 30px;
+  /* opacity: 1; */
+  border: 1px solid rgb(76, 76, 76);
+  background: linear-gradient(to top, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 1), rgb(0, 0, 0, 1));
+}
+
+.person_profile {
+  margin-top: 15px;
+  display: flex;
+  width: auto;
+  height: 40px;
+  background-color: black;
+  align-items: center;
+  padding-left: 7px;
+  gap: 10px
+}
+
+.person_profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.person_profile p {
+  color: white;
+  font-size: 14px;
+}
+
+.person_profile1 {
+
+  display: flex;
+  width: auto;
+  height: 40px;
+  background-color: black;
+  align-items: center;
+  padding-left: 7px;
+  gap: 10px
+}
+
+.person_profile1 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.person_profile1 p {
+  color: white;
+  font-size: 14px;
+}
+
+.Signout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(71, 71, 71);
+  height: 40px;
+  cursor: pointer;
+}
+
+.Signout p {
+  color: white;
+  font-size: 14px;
+}
+
+#rows {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+#footer_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap:50px;
+  /* background-color: pink; */
+  overflow: hidden;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+#Questions {
+  margin-top: 20px;
+  /* background-color: red; */
+}
+
+#Questions>p {
+
+  color: rgb(158, 158, 158);
+}
+
+#FAQ_and_Cookie {
+  /* margin-top: 20px; */
+  line-height: 30px;
+  /* background-color: yellow; */
+}
+
+#FAQ_and_Cookie>p {
+  color: rgb(158, 158, 158);
+}
+
+#help_and_Corporate {
+  line-height: 30px;
+  /* background-color: green; */
+  /* background-color: antiquewhite; */
+  /* width: auto; */
+}
+
+#help_and_Corporate>p {
+  color: rgb(158, 158, 158);
+}
+
+#terms_and_privacys {
+  line-height: 30px;
+  /* background-color: aqua; */
+
+}
+
+#terms_and_privacys p {
+  color: rgb(158, 158, 158);
+}
+
+@media screen and (max-width:769px) {
+  .movie_name {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width:744px) {
+  #footer_div{
+    gap:20px;
+  }
+  
+}
+

@@ -1,0 +1,168 @@
+.row {
+  margin-left: 44px;
+  background-color: aqua;
+}
+
+.series {
+  position: relative;
+  background-color: pink;
+  z-index: 2;
+}
+
+.new_releases {
+  position: relative;
+  z-index: 1;
+
+}
+
+.row_title {
+  color: red;
+  overflow: hidden;
+}
+
+.one {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.banner{
+  background-color: red;
+  width: 240px;
+  height: 130px;
+}
+.banner img {
+  width: 240px;
+  height: 130px;
+}
+
+.card {
+  transition: 1s;
+  margin-top: -130px; 
+  position: relative;
+  display: none;
+  width: auto;
+  height: 310px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 7px 7px 5px 0px black;
+}
+
+
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 40px;
+  border: 2px solid#8e8e8e;
+}
+
+.after_add {
+  color: black;
+  background-color: white;
+}
+
+.before_icon {
+  color: #8e8e8e;
+}
+
+.after_icon {
+  color: black;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.func_contanier {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 20px;
+  color: white;
+  border: 1px solid#8e8e8e;
+}
+
+.time {
+  padding-left: 5px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.images {
+  width: 300px;
+  height: 180px;
+}
+
+
+.cc:hover .card {
+  display: block;
+}
+
+
+.one::-webkit-scrollbar {
+  display: none;
+}
+
+/* 
+@media screen and (max-width:1024px) {
+  .banner img{
+    width: 200px;
+    height: 120px;
+  }
+  .series{
+    margin-top: 150px;
+  }
+  .new_releases{
+    margin-top: 150px;
+   
+  }
+
+  .action_and_adventure{
+    margin-top: 150px;
+  }
+
+}
+
+@media screen and (max-width:769px) {
+  .banner img{
+    width: 180px;
+    height: 100px;
+  }
+  .series{
+    margin-top: 130px;
+  }
+  .new_releases{
+    margin-top: 130px;
+   
+  }
+  .action_and_adventure{
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .banner img{
+    width: 160px;
+    height: 100px;
+  }
+} */

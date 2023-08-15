@@ -1,0 +1,384 @@
+#mains {
+  background-color: black;
+}
+
+#ctn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+#bg-pic {
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 110vh;
+  position: absolute;
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)),
+    url('../../../../public/Pictures/Background_image.PNG');
+  z-index: 1;
+}
+
+#navbar1 {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+
+}
+
+#navbar1 img {
+  width: 160px;
+  height: 120px;
+}
+
+.signup_divs {
+
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8));
+}
+
+#signups {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px;
+  align-items: center;
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8));
+  padding: 10px;
+}
+
+#header {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+
+.input_and_btn_div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input_and_btn_div>h1 {
+  color: rgb(255, 255, 255);
+}
+
+.input_and_btn_div>button {
+  margin-top: 20px;
+}
+
+.input_m {
+  padding: 10px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+.input_emails:-webkit-autofill,
+.input_emails:-webkit-autofill:hover,
+.input_emails:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #212121 inset;
+  transition: background-color 5000s ease-in-out 0s;
+
+}
+
+.inpt_password1 {
+  padding: 10px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+#input_password1_border {
+  border-bottom: 4px solid orange;
+}
+
+.sign_ins {
+  width: 100%;
+  height: 50px;
+  margin-top: 300px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: red;
+}
+
+#incorrect_pass {
+  padding-left: 10px;
+  height: 55px;
+  display: flex;
+  background-color: orange;
+  border-radius: 4px;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.incorrect_pass h4 {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.span {
+  font-style: normal;
+}
+
+.remember_x_help {
+  justify-content: space-between;
+  width: 91%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.chk_box_x_remember_me {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+
+}
+
+.check_boxs {
+  color: rgb(159, 160, 161);
+
+  font-size: 500px;
+}
+
+.remember_me {
+  font-size: 0.8rem;
+  color: rgb(159, 160, 161)
+}
+
+#need_help {
+  font-size: 0.8rem;
+  color: rgb(159, 160, 161)
+}
+
+#new_to_netflix_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 95%;
+  height: 80px;
+}
+
+.text_1 {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.p2 {
+  color: white;
+}
+
+#this_page_div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#this_page_div>p {
+  color: rgb(158, 158, 158);
+}
+
+#footer_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  overflow: hidden;
+  padding-left: 50px;
+}
+
+#Questions {
+  margin-top: 20px;
+}
+
+#Questions>p {
+  color: rgb(158, 158, 158);
+}
+
+#FAQ_and_Cookie {
+  line-height: 30px;
+}
+
+#FAQ_and_Cookie>p {
+  color: rgb(158, 158, 158);
+}
+
+#help_and_Corporate {
+  line-height: 30px;
+}
+
+#help_and_Corporate>p {
+  color: rgb(158, 158, 158);
+}
+
+#terms_and_privacys {
+  line-height: 30px;
+}
+
+#terms_and_privacys p {
+  color: rgb(158, 158, 158);
+}
+
+@media screen and (max-width:740px) {
+
+  #signups {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #navbar1 img {
+    width: 140px;
+    height: 100px;
+  }
+
+  .input_and_btn_div {
+    width: 100%;
+  }
+
+  .sign_ins {
+    width: 100%;
+  }
+
+  .remember_x_help {
+    width: 100%;
+  }
+
+  #new_to_netflix_text {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  #bg-pic {
+    visibility: hidden;
+  }
+
+  #incorrect_pass h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #signups {
+    margin-top: 0px;
+  }
+
+  #navbar1 img {
+    width: 120px;
+    height: 80px;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+  .remember_me {
+    font-size: 18px;
+  }
+
+  #need_help {
+    font-size: 14px;
+  }
+
+  .text_1 p {
+    font-size: 14px;
+  }
+
+  #this_page_div p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+
+  #signups {
+    margin-top: 0px;
+  }
+
+  #navbar1 img {
+    width: 110px;
+    height: 70px;
+  }
+
+  #header h1 {
+    font-size: 1.5rem;
+  }
+
+  .input_m {
+    height: 30px;
+  }
+
+  .inpt_password1 {
+    height: 40px;
+
+  }
+
+  .sign_ins {
+
+    height: 40px;
+
+  }
+
+  .text_1 p {
+    font-size: 0.8rem;
+  }
+
+  #this_page_div p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:744px) {
+  #footer_div {
+    gap: 20px;
+  }
+
+}
