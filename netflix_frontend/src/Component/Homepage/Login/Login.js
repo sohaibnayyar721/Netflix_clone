@@ -105,9 +105,13 @@ function Login(props) {
 
     if (get_values) {
       props.sendemail(get_values)
-      navigate('./signin')
+      navigate('/signin')
     }
 
+  }
+
+  function login_button(){
+navigate('/signin')
   }
   return (
     <div className="parent">
@@ -118,7 +122,7 @@ function Login(props) {
             src={netflix_logo}
           ></img>
 
-          <button className="Sign_in_btn"> Sign In</button>
+          <button className="Sign_in_btn" onClick={login_button}> Sign In</button>
         </div>
   
         <div className="pic_content_div">

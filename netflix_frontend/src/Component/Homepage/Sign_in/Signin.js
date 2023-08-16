@@ -11,17 +11,17 @@ function Signup({ first_email }) {
   let [fail_password, set_fail_password] = useState(false)
   const navigate = useNavigate();
   let [token, set_token] = useState('')
+  const check_empty_input = email.length > 0 && password.length > 0
+    async function signin(e) {
 
-  async function signin(e) {
     e.preventDefault()
-    if (first_email && password) {
+    if (check_empty_input) {
 
       try {
         await axios.post('https://netflix-clone-gold-zeta.vercel.app/api/login', { email, password })
           .then((res) => {
             set_token(res.data)
 
-            // console.log(res.data.message)
             if (res.data.message === 'sucess') {
               localStorage.setItem('token', res.data.token)
               navigate('/HomeScreen')
@@ -34,6 +34,8 @@ function Signup({ first_email }) {
       catch {
         alert('Server Error')
       }
+    }else{
+      alert('Please enter all field')
     }
   }
 
