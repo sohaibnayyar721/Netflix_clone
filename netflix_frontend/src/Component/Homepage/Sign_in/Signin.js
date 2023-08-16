@@ -21,7 +21,7 @@ function Signup({ first_email }) {
           .then((res) => {
             set_token(res.data)
 
-            console.log(res.data.message)
+            // console.log(res.data.message)
             if (res.data.message === 'sucess') {
               localStorage.setItem('token', res.data.token)
               navigate('/HomeScreen')
