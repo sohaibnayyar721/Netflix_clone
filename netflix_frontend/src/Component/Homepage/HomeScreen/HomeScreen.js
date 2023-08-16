@@ -5,11 +5,7 @@ import Row1 from "../Rows/Row";
 import Row2 from "../Rows/Row2";
 import Row3 from "../Rows/Row3";
 import Row4 from "../Rows/Row4";
-import facebook from '../Pictures/facebook.png'
-import Instagram from '../Pictures/Instagram.PNG'
-import youtube from '../Pictures/youtube.PNG'
 import { useEffect, useState, useRef } from "react";
-
 import { name1, description1, random_video } from "../Random_banner_function";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -32,7 +28,7 @@ function HomeScreen(props) {
           'Content-Type': 'application/json'
         }
       }
-      await axios.post('http://localhost:8000/api/homescreen', payload, config)
+      await axios.post('https://netflix-clone-gold-zeta.vercel.app/api/homescreen', payload, config)
         .then((res) => {
           localStorage.getItem('token')
           if (res.data === 'profile access') {
