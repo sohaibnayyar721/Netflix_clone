@@ -17,7 +17,7 @@ function Signup({ first_email }) {
     if (first_email && password) {
 
       try {
-        await axios.post('http://localhost:8000/api/login', { email, password })
+        await axios.post('https://netflix-clone-gold-zeta.vercel.app/api/login', { email, password })
           .then((res) => {
             set_token(res.data)
 

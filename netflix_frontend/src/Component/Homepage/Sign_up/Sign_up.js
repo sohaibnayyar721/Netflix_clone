@@ -24,7 +24,7 @@ function Sign_up() {
                 if (check !== true) {
                     set_check_email(true)
                 } else {
-                    await axios.post('http://localhost:8000/api/register', { fname, lname, email, password })
+                    await axios.post('https://netflix-clone-gold-zeta.vercel.app/api/register', { fname, lname, email, password })
                         .then((resp) => {
                             if (resp.data === 'Registration successful') {
                                 alert(resp.data)
