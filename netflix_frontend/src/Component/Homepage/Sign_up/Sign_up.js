@@ -28,7 +28,7 @@ function Sign_up() {
                         .then((resp) => {
                             if (resp.data === 'Registration successful') {
                                 alert(resp.data)
-                                navigate('/')
+                                navigate('/signin')
                             }
                             else {
 
